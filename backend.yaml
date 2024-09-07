@@ -20,10 +20,11 @@
 
   - name: install nodejs
     ansible.builtin.package:
-      name: 
-      - nodejs
-      - mysql
+      name: "{{ item }}"
       state: present
+    loop: 
+    - nodejs
+    - mysql
 
   - name: creating user
     ansible.builtin.user:
