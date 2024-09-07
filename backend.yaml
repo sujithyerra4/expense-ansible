@@ -3,7 +3,7 @@
   become: yes
   vars:
     password: ExpenseApp@1
-    host: sujithyerra.online
+    host: mysql.sujithyerra.online
   tasks:
   - name: ansible to install pymysql and cryptography
     ansible.builtin.pip:
