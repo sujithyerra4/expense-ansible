@@ -43,4 +43,4 @@
     ansible.builtin.service:
       daemon-reload: true
       state: restarted
-      name: nodejs 
+      name: nginx 
