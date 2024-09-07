@@ -30,7 +30,7 @@
 
   - name: extract the file
     ansible.builtin.unarchive:
-      src: expense.conf
+      src: /tmp/frontend.zip
       dest: /usr/share/nginx/html 
       remote_src: yes
 
